@@ -774,6 +774,8 @@
 	</dict>
 	<key>Booter</key>
 	<dict>
+		<key>Patch</key>
+		<array/>
 		<key>MmioWhitelist</key>
 		<array>
 			<dict>
@@ -795,6 +797,8 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
+			<key>AllowRelocationBlock</key>
+			<false/>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
@@ -1618,6 +1622,8 @@
 		<array/>
 		<key>Boot</key>
 		<dict>
+			<key>PickerVariant</key>
+			<string>Auto</string>
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
 			<key>HibernateMode</key>
@@ -1661,6 +1667,8 @@
 		<key>Entries</key>
 		<array>
 			<dict>
+				<key>TextMode</key>
+				<false/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
@@ -1677,6 +1685,8 @@
 		</array>
 		<key>Security</key>
 		<dict>
+			<key>BlacklistAppleUpdate</key>
+			<true/>
 			<key>AllowNvramReset</key>
 			<true/>
 			<key>AllowSetDefault</key>
@@ -1709,6 +1719,10 @@
 		<key>Tools</key>
 		<array>
 			<dict>
+				<key>TextMode</key>
+				<false/>
+				<key>RealPath</key>
+				<false/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
@@ -1723,6 +1737,10 @@
 				<string>OpenShell.efi</string>
 			</dict>
 			<dict>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
@@ -1737,6 +1755,10 @@
 				<string>memcheck/memcheck.efi</string>
 			</dict>
 			<dict>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 				<key>Arguments</key>
 				<string>Shutdown</string>
 				<key>Auxiliary</key>
@@ -1886,6 +1908,8 @@
 		</dict>
 		<key>Audio</key>
 		<dict>
+			<key>SetupDelay</key>
+			<integer>0</integer>
 			<key>AudioCodec</key>
 			<integer>0</integer>
 			<key>AudioDevice</key>
@@ -1897,7 +1921,7 @@
 			<key>MinimumVolume</key>
 			<integer>50</integer>
 			<key>PlayChime</key>
-			<true/>
+			<string>Auto</string>
 			<key>VolumeAmplifier</key>
 			<integer>143</integer>
 		</dict>
@@ -1999,8 +2023,6 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DeduplicateBootOrder</key>
-			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
