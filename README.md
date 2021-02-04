@@ -6,10 +6,11 @@ This repo contains the installation guide and EFI files required to get a perfec
 - **This guide is not for models with Haswell 4th gen CPU**
 - **The EFI folder and the patched ACPI were first created by [EchoEspirit](https://github.com/EchoEsprit/Hackintosh-Catalina-OpenCore-Lenovo-T450s-efi) and futher optimized by [i3p9](https://github.com/i3p9/Hackintosh-Catalina-OpenCore-Lenovo-T450s-efi). I tweaked a couple of things and fixed some errors that were happening on T450 + added Intel WiFi drivers from [Openintelwireless](https://github.com/OpenIntelWireless)**
 - **I will try my best to keep the repo updated with the latest kexts and Opencore version**
-- **This EFI works with Big Sur Public Release (11.0.1), Catalina and Mojave**
+- **This EFI works with Big Sur Public Release (11.x), Catalina and Mojave**
 - **This EFI is Configured with Big Sur in mind. If you are using it on Catalina or Mojave read the the whole guide to know where to make the necessary changes**
+- **With every EFI update you retrieve from here please remember to transfer your Device details like Serial number, MLB, ROM, Sytem-UUID and all of them under Platforminfo -> Generic**
 
-![img](https://img.shields.io/github/last-commit/racka98/Lenovo-Thinkpad-T450-T450s-Hackintosh-Guide-Opencore.svg?color=green&label=last-commit) ![img](https://img.shields.io/badge/macOS%20support-Big%20Sur--11.0.1-blue) ![img](https://img.shields.io/badge/Opencore%20version-0.6.3-red)
+![img](https://img.shields.io/github/last-commit/racka98/Lenovo-Thinkpad-T450-T450s-Hackintosh-Guide-Opencore.svg?color=red&label=Last%20Update) ![img](https://img.shields.io/badge/macOS%20Support-Big%20Sur--11-blue) ![img](https://img.shields.io/badge/OpenCore%20Version-0.6.6-yellow)
 
 ![About Mac Big Sur](https://imgur.com/vYo3Jt4.png)
 
@@ -35,6 +36,9 @@ EFI folder and Guide for Thinkpad T450 and T450s Hackintosh Catalina.
 - `UEFI/Legacy Boot`: **UEFI Only**;
 - `Fingerprint Sensor`: **Disabled** `(Causes issues with wake from sleep)`;
 - `CSM Support`: **Yes**.
+
+**Note: If you can't see any boot entries with CMS support set to Yes, change it to NO. After this you will get a garbled screen, to fix this put the laptop to sleep by closing the lid till the light starts blinking and wake it up**
+
 
 # What works
 
